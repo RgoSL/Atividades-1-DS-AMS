@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rafael"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-05-15 09:51:19 "/>
+        <attribute name="created" value="UmFmYWVsO1JBRkFFTC1MSU1BOzIwMjMtMDUtMTU7IjA5OjI2OjM3ICI7MjU1MA=="/>
+        <attribute name="edited" value="UmFmYWVsO1JBRkFFTC1MSU1BOzIwMjMtMDUtMTU7IjA5OjUxOjE5ICI7MTsyNjU2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Nota1" type="Real" array="False" size=""/>
+            <declare name="Nota2" type="Real" array="False" size=""/>
+            <declare name="Nota3" type="Real" array="False" size=""/>
+            <declare name="Nota4" type="Real" array="False" size=""/>
+            <declare name="M&#233;dia" type="Real" array="False" size=""/>
+            <output expression="&quot;Qual foi a primeira nota do aluno?&quot;" newline="True"/>
+            <input variable="Nota1"/>
+            <output expression="&quot;Qual foi a segunda nota do aluno?&quot;" newline="True"/>
+            <input variable="Nota2"/>
+            <output expression="&quot;Qual foi a terceira nota do aluno?&quot;" newline="True"/>
+            <input variable="Nota3"/>
+            <output expression="&quot;Qual foi a quarta nota do aluno?&quot;" newline="True"/>
+            <input variable="Nota4"/>
+            <assign variable="M&#233;dia" expression="(Nota1+Nota2+Nota3+Nota4)/4"/>
+            <output expression="&quot;A M&#233;dia do Aluno &#233; : &quot;&amp;M&#233;dia" newline="True"/>
+            <if expression="(M&#233;dia&gt;=9)">
+                <then>
+                    <output expression="&quot;Aluno Aprovado na classifica&#231;&#227;o A!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="(M&#233;dia&gt;=7)">
+                        <then>
+                            <output expression="&quot;Aluno Aprovado na classifica&#231;&#227;o B.&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="(M&#233;dia&gt;=5)">
+                                <then>
+                                    <output expression="&quot;Aluno Aprovado na classifica&#231;&#227;o C.&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="(M&#233;dia&gt;=2.5)">
+                                        <then>
+                                            <output expression="&quot;Aluno Reprovado na classica&#231;&#227;o D!&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="(M&#233;dia&lt;2.5)">
+                                                <then>
+                                                    <output expression="&quot;Aluno Reprovado! Classifica&#231;&#227;o E!&quot;" newline="True"/>
+                                                </then>
+                                                <else/>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

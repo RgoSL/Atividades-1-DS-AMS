@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rafael"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-24 12:20:24 "/>
+        <attribute name="created" value="UmFmYWVsO1JBRkFFTC1MSU1BOzIwMjMtMDMtMjM7IjExOjM4OjM4ICI7MjU0NA=="/>
+        <attribute name="edited" value="UmFmYWVsO1JBRkFFTC1MSU1BOzIwMjMtMDMtMjQ7IjEyOjIwOjI0ICI7MTsyNjQw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="NomeDoAluno" type="String" array="False" size=""/>
+            <declare name="Nota1" type="Real" array="False" size=""/>
+            <declare name="Nota2" type="Real" array="False" size=""/>
+            <declare name="Nota3" type="Real" array="False" size=""/>
+            <declare name="Nota4" type="Real" array="False" size=""/>
+            <declare name="Media" type="Real" array="False" size=""/>
+            <output expression="&quot;Qual o nome do aluno(a)?&quot;" newline="True"/>
+            <input variable="NomeDoAluno"/>
+            <output expression="&quot;Qual foi a nota do aluno no primeiro bimestre?&quot;" newline="True"/>
+            <input variable="Nota1"/>
+            <output expression="&quot;Qual foi a nota do aluno no segundo bimestre?&quot;" newline="True"/>
+            <input variable="Nota2"/>
+            <output expression="&quot;Qual foi a nota do aluno no terceiro bimestre?&quot;" newline="True"/>
+            <input variable="Nota3"/>
+            <output expression="&quot;Qual foi a nota do aluno no quarto bimestre?&quot;" newline="True"/>
+            <input variable="Nota4"/>
+            <assign variable="Media" expression="(Nota1+Nota2+Nota3+Nota4)/4"/>
+            <output expression="&quot;A m&#233;dia do aluno(a)  &quot; &amp; nomedoaluno &amp;  &quot; &#233; &quot; &amp; Media" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

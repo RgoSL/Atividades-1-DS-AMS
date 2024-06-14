@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rafael"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-04-22 07:48:05 "/>
+        <attribute name="created" value="UmFmYWVsO1JBRkFFTC1MSU1BOzIwMjMtMDQtMjI7IjAzOjM0OjAwICI7MjUzMA=="/>
+        <attribute name="edited" value="UmFmYWVsO1JBRkFFTC1MSU1BOzIwMjMtMDQtMjI7IjA3OjQ4OjA1ICI7MTsyNjUy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="C" type="Real" array="False" size=""/>
+            <declare name="R" type="Real" array="False" size=""/>
+            <assign variable="R" expression="0"/>
+            <output expression="&quot;Qual o valor do Raio do c&#237;rculo em cm?&quot;" newline="True"/>
+            <input variable="R"/>
+            <assign variable="C" expression="FuncCalcular(R)"/>
+            <output expression="&quot;O valor do Comprimento em cm &#233; de &quot; &amp;tofixed(C,2) &amp; &quot;cm&quot;" newline="True"/>
+        </body>
+    </function>
+    <function name="FuncCalcular" type="Real" variable="C">
+        <parameters>
+            <parameter name="R" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="C" type="Real" array="False" size=""/>
+            <assign variable="C" expression="0"/>
+            <assign variable="C" expression="2*PI*R"/>
+        </body>
+    </function>
+</flowgorithm>

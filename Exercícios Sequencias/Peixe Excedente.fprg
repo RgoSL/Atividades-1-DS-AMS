@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rafael"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-05-16 10:24:32 "/>
+        <attribute name="created" value="UmFmYWVsO1JBRkFFTC1MSU1BOzIwMjMtMDUtMTY7IjA5OjUzOjE2ICI7MjU0OA=="/>
+        <attribute name="edited" value="UmFmYWVsO1JBRkFFTC1MSU1BOzIwMjMtMDUtMTY7IjEwOjI0OjMyICI7MTsyNjQ0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Pescado" type="Real" array="False" size=""/>
+            <output expression="&quot;Ol&#225; Pescador! Quantos Kilos conseguiu?&quot;" newline="True"/>
+            <input variable="Pescado"/>
+            <declare name="Multa" type="Real" array="False" size=""/>
+            <if expression="(Pescado&gt;50)">
+                <then/>
+                <else>
+                    <output expression="&quot;Nenhum valor excedente Pescado. Sem Multa!&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

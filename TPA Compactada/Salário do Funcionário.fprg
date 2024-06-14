@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rafael"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-24 01:00:40 "/>
+        <attribute name="created" value="UmFmYWVsO1JBRkFFTC1MSU1BOzIwMjMtMDMtMjQ7IjEyOjQ5OjUxICI7MjU0Mw=="/>
+        <attribute name="edited" value="UmFmYWVsO1JBRkFFTC1MSU1BOzIwMjMtMDMtMjQ7IjAxOjAwOjQwICI7MTsyNjM0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="SalarioBruto" type="Real" array="False" size=""/>
+            <declare name="Imposto" type="Real" array="False" size=""/>
+            <declare name="Gratificacao" type="Real" array="False" size=""/>
+            <declare name="SalarioLiquido" type="Integer" array="False" size=""/>
+            <output expression="&quot;Qual o valor do seu sal&#225;rio bruto?&quot;" newline="True"/>
+            <input variable="SalarioBruto"/>
+            <assign variable="Gratificacao" expression="SalarioBruto*0.1"/>
+            <assign variable="Imposto" expression="SalarioBruto*0.2"/>
+            <assign variable="SalarioLiquido" expression="SalarioBruto-(SalarioBruto*0.2)+(SalarioBruto*0.1)"/>
+            <output expression="&quot;O valor da sua Gratifica&#231;&#227;o &#233; de &quot; &amp;Gratificacao" newline="True"/>
+            <output expression="&quot;O valor devido ao Imposto &#233; de &quot;&amp;Imposto" newline="True"/>
+            <output expression="&quot;O seu Sal&#225;rio Liqu&#237;do &#233; &quot;&amp;SalarioLiquido" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

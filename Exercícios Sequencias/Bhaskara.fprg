@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rafael"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-05-13 11:58:23 "/>
+        <attribute name="created" value="UmFmYWVsO1JBRkFFTC1MSU1BOzIwMjMtMDUtMTM7IjExOjM0OjQwICI7MjUzNA=="/>
+        <attribute name="edited" value="UmFmYWVsO1JBRkFFTC1MSU1BOzIwMjMtMDUtMTM7IjExOjU4OjIzICI7MTsyNjQ5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A" type="Real" array="False" size=""/>
+            <output expression="&quot;Por favor, qual &#233; o valor do A?&quot;" newline="True"/>
+            <input variable="A"/>
+            <declare name="B" type="Real" array="False" size=""/>
+            <output expression="&quot;Por favor, qual  o valor do B?&quot;" newline="True"/>
+            <input variable="B"/>
+            <declare name="C" type="Real" array="False" size=""/>
+            <output expression="&quot;Por favor, qual o valor do C?&quot;" newline="True"/>
+            <input variable="C"/>
+            <declare name="Del" type="Real" array="False" size=""/>
+            <assign variable="Del" expression="B^2 - (4*A*C)"/>
+            <declare name="X" type="Real" array="False" size=""/>
+            <declare name="X&#185;" type="Real" array="False" size=""/>
+            <declare name="X&#178;" type="Real" array="False" size=""/>
+            <if expression="(Del&lt;=0)">
+                <then>
+                    <output expression="&quot;N&#227;o &#233; possivel apresentar uma Raiz para a equa&#231;&#227;o. O Delta &#233; menor que 0.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="(Del=0)">
+                        <then>
+                            <assign variable="X" expression="(-b+sqrt (Del) )/2*a"/>
+                            <output expression="&quot;Bem, o valor de X&#185; e X&#178;  &#233;: &quot;&amp;X" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="(Del&gt;=0)">
+                                <then>
+                                    <assign variable="X&#185;" expression="(-b+sqrt (Del) )/2*a"/>
+                                    <assign variable="X&#178;" expression="(-b-sqrt (Del) )/2*a"/>
+                                    <output expression="&quot;Bem, o valor de X&#185;  &#233;: &quot;&amp;tofixed(X&#185;,2)" newline="True"/>
+                                    <output expression="&quot;Bem, o valor de X&#178;  &#233;: &quot;&amp;tofixed(X&#178;,2)" newline="True"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

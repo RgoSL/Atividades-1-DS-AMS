@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rafael"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-05-14 01:14:29 "/>
+        <attribute name="created" value="UmFmYWVsO1JBRkFFTC1MSU1BOzIwMjMtMDUtMTQ7IjAxOjA0OjE3ICI7MjUzNQ=="/>
+        <attribute name="edited" value="UmFmYWVsO1JBRkFFTC1MSU1BOzIwMjMtMDUtMTQ7IjAxOjE0OjI5ICI7MTsyNjQ3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Login" type="String" array="False" size=""/>
+            <output expression="&quot;Login&quot;" newline="True"/>
+            <input variable="Login"/>
+            <declare name="Senha" type="String" array="False" size=""/>
+            <declare name="carpediem" type="String" array="False" size=""/>
+            <assign variable="Senha" expression="&quot;carpediem&quot;"/>
+            <output expression="&quot;Senha&quot;" newline="True"/>
+            <input variable="carpediem"/>
+            <if expression="(Senha=carpediem)">
+                <then>
+                    <output expression="&quot;Login e Senha v&#225;lidos.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Login ou Senha incorretos.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

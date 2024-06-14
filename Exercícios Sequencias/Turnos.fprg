@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rafael"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-05-13 11:34:12 "/>
+        <attribute name="created" value="UmFmYWVsO1JBRkFFTC1MSU1BOzIwMjMtMDUtMTM7IjExOjAyOjM5ICI7MjUzNw=="/>
+        <attribute name="edited" value="UmFmYWVsO1JBRkFFTC1MSU1BOzIwMjMtMDUtMTM7IjExOjM0OjEyICI7MTsyNjQx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Hor&#225;rio" type="Real" array="False" size=""/>
+            <output expression="&quot;A que horas voc&#234; come&#231;a a trabalhar?&quot;" newline="True"/>
+            <input variable="Hor&#225;rio"/>
+            <if expression="(Hor&#225;rio&gt;=5)">
+                <then>
+                    <if expression="(Hor&#225;rio&lt;=12.59)">
+                        <then>
+                            <output expression="&quot;Voc&#234; &#233; do turno da manh&#227;.&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="(Hor&#225;rio&gt;=13.00)">
+                                <then>
+                                    <output expression="&quot;Voc&#234; &#233; do turno da tarde.&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="(Hor&#225;rio&gt;=21.00)">
+                                        <then>
+                                            <output expression="&quot;Voc&#234; &#233; do turno da noite.&quot;" newline="True"/>
+                                        </then>
+                                        <else/>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

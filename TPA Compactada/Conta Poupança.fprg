@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rafael"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-24 12:49:30 "/>
+        <attribute name="created" value="UmFmYWVsO1JBRkFFTC1MSU1BOzIwMjMtMDMtMjQ7IjEyOjIyOjUzICI7MjUzNg=="/>
+        <attribute name="edited" value="UmFmYWVsO1JBRkFFTC1MSU1BOzIwMjMtMDMtMjQ7IjEyOjQ5OjMwICI7MTsyNjQ4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Capital" type="Real" array="False" size=""/>
+            <declare name="Juros" type="Real" array="False" size=""/>
+            <declare name="Meses" type="Integer" array="False" size=""/>
+            <declare name="Montante" type="Real" array="False" size=""/>
+            <output expression="&quot;Qual foi o capital inicial?&quot;" newline="True"/>
+            <input variable="Capital"/>
+            <output expression="&quot;Qual o valor dos juros?&quot;" newline="True"/>
+            <input variable="Juros"/>
+            <output expression="&quot;Por quantos meses o seu dinheiro ficou na poupan&#231;a?&quot;" newline="True"/>
+            <input variable="Meses"/>
+            <assign variable="Montante" expression="capital * (1 + (juros / 100)) ^ meses"/>
+            <output expression="&quot;O valor do seu montante &#233; de &quot; &amp;Montante" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

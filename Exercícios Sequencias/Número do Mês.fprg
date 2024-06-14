@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rafael"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-05-14 01:43:42 "/>
+        <attribute name="created" value="UmFmYWVsO1JBRkFFTC1MSU1BOzIwMjMtMDUtMTQ7IjAxOjI2OjIyICI7MjUzNQ=="/>
+        <attribute name="edited" value="UmFmYWVsO1JBRkFFTC1MSU1BOzIwMjMtMDUtMTQ7IjAxOjQzOjQyICI7MTsyNjQ0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Meses" type="Integer" array="False" size=""/>
+            <output expression="&quot;Escolha um n&#250;mero entre 1 e 12.&quot;" newline="True"/>
+            <input variable="Meses"/>
+            <if expression="(Meses=1)">
+                <then>
+                    <output expression="&quot;Janeiro &#233; o m&#234;s que corresponde ao n&#250;mero 1!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="(Meses=2)">
+                        <then>
+                            <output expression="&quot;Fevereiro &#233; o m&#234;s que corresponde ao n&#250;mero 2!&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="(Meses=3)">
+                                <then>
+                                    <output expression="&quot;Mar&#231;o &#233; o m&#234;s que corresponde ao n&#250;mero 3!&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="(Meses=4)">
+                                        <then>
+                                            <output expression="&quot;Abril &#233; o m&#234;s que corresponde ao n&#250;mero 4!&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="(Meses=5)">
+                                                <then>
+                                                    <output expression="&quot;Maio &#233; o m&#234;s que corresponde ao n&#250;mero 5!&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="(Meses=6)">
+                                                        <then>
+                                                            <output expression="&quot;Junho &#233; o m&#234;s que corresponde ao n&#250;mero 6!&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <if expression="(Meses=7)">
+                                                                <then>
+                                                                    <output expression="&quot;Julho &#233; o m&#234;s que corresponde ao n&#250;mero 7!&quot;" newline="True"/>
+                                                                </then>
+                                                                <else>
+                                                                    <if expression="(Meses=8)">
+                                                                        <then>
+                                                                            <output expression="&quot;Agosto &#233; o m&#234;s que corresponde ao n&#250;mero 8!&quot;" newline="True"/>
+                                                                        </then>
+                                                                        <else>
+                                                                            <if expression="(Meses=9)">
+                                                                                <then>
+                                                                                    <output expression="&quot;Setembro &#233; o m&#234;s que corresponde ao n&#250;mero 9!&quot;" newline="True"/>
+                                                                                </then>
+                                                                                <else>
+                                                                                    <if expression="(Meses=10)">
+                                                                                        <then>
+                                                                                            <output expression="&quot;Outubro &#233; o m&#234;s que corresponde ao n&#250;mero 10!&quot;" newline="True"/>
+                                                                                        </then>
+                                                                                        <else>
+                                                                                            <if expression="(Meses=11)">
+                                                                                                <then>
+                                                                                                    <output expression="&quot;Novembro &#233; o m&#234;s que corresponde ao n&#250;mero 11!&quot;" newline="True"/>
+                                                                                                </then>
+                                                                                                <else>
+                                                                                                    <if expression="(Meses=12)">
+                                                                                                        <then>
+                                                                                                            <output expression="&quot;Dezembro &#233; o m&#234;s que corresponde ao n&#250;mero 12!&quot;" newline="True"/>
+                                                                                                        </then>
+                                                                                                        <else>
+                                                                                                            <if expression="(Meses&gt;12)">
+                                                                                                                <then>
+                                                                                                                    <output expression="&quot;Por favor, escolha um n&#250;mero entre 1 e 12.&quot;" newline="True"/>
+                                                                                                                </then>
+                                                                                                                <else/>
+                                                                                                            </if>
+                                                                                                        </else>
+                                                                                                    </if>
+                                                                                                </else>
+                                                                                            </if>
+                                                                                        </else>
+                                                                                    </if>
+                                                                                </else>
+                                                                            </if>
+                                                                        </else>
+                                                                    </if>
+                                                                </else>
+                                                            </if>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

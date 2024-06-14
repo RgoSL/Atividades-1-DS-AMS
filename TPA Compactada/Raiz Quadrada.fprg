@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rafael"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-24 01:10:31 "/>
+        <attribute name="created" value="UmFmYWVsO1JBRkFFTC1MSU1BOzIwMjMtMDMtMjQ7IjAxOjAyOjIxICI7MjUyNw=="/>
+        <attribute name="edited" value="UmFmYWVsO1JBRkFFTC1MSU1BOzIwMjMtMDMtMjQ7IjAxOjEwOjMxICI7MTsyNjM1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ValorX" type="Real" array="False" size=""/>
+            <declare name="Raiz" type="Integer" array="False" size=""/>
+            <output expression="&quot;Insira um n&#250;mero&quot;" newline="True"/>
+            <input variable="ValorX"/>
+            <assign variable="Raiz" expression="Sqrt(ValorX)"/>
+            <output expression="&quot;A raiz quadrada de &quot; &amp;ValorX&amp; &quot; &#233; &quot; &amp;Raiz" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

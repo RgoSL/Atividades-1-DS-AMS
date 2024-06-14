@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rafael"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-04-22 08:03:18 "/>
+        <attribute name="created" value="UmFmYWVsO1JBRkFFTC1MSU1BOzIwMjMtMDQtMjI7IjA3OjUyOjIwICI7MjUzNg=="/>
+        <attribute name="edited" value="UmFmYWVsO1JBRkFFTC1MSU1BOzIwMjMtMDQtMjI7IjA4OjAzOjE4ICI7MTsyNjQ4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="R" type="Real" array="False" size=""/>
+            <assign variable="R" expression="0"/>
+            <output expression="&quot;Qual o valor do Raio do c&#237;rculo em cm? &quot;" newline="True"/>
+            <input variable="R"/>
+            <call expression="ProcCalcular(R)"/>
+        </body>
+    </function>
+    <function name="ProcCalcular" type="None" variable="">
+        <parameters>
+            <parameter name="R" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="C" type="Real" array="False" size=""/>
+            <assign variable="C" expression="0"/>
+            <assign variable="C" expression="2*PI*R"/>
+            <output expression="&quot;O Comprimento do c&#237;rculo &#233; de &quot; &amp;tofixed(C,2) &amp; &quot;cm&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
